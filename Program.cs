@@ -52,7 +52,7 @@ namespace DecisionMaker
                 else {
                     Console.WriteLine($"{name} that number was not between 1-100");
                 }
-                    Console.WriteLine("play again? [Y | N]");
+                    Console.WriteLine($"Would you like to play again {name}? [Y | N]");
              
                 }
             while (Console.ReadLine().ToUpper() != "N");
