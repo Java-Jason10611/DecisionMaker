@@ -7,7 +7,7 @@ namespace DecisionMaker
     class Program
     {
         static void Main(string[] args)
-        {   int rageMeter = 0;
+        {   int rageMeter = 5;
             Console.WriteLine("please enter your name");
             string name = Console.ReadLine();
             Console.WriteLine($"thank you {name}");
@@ -21,39 +21,34 @@ namespace DecisionMaker
                 {
                     if (userInput > 60 && userInput % 2 != 0)
                     {
-                        Console.WriteLine($"{name} your number {userInput} is Odd");
+                        Console.WriteLine($"{userInput} Odd");
                     }
 
                     else if (userInput > 60 && userInput % 2 == 0)
                     {
-                        Console.WriteLine($"{name} your number {userInput} is Even");
+                        Console.WriteLine($"{userInput} Even");
                     }
 
-                    else if (userInput < 60 && userInput > 26 && userInput % 2 == 0)
+                    else if (userInput <= 60 && userInput >= 26 && userInput % 2 == 0)
                     {
-                        Console.WriteLine($"{name} your number {userInput} is Even");
-                    }
-
-                    else if (userInput < 60 && userInput > 26 && userInput % 2 == 0)
-                    {
-                        Console.WriteLine($"{name} your number {userInput} is Even");
+                        Console.WriteLine($"Even");
                     }
 
                     else if (userInput < 26 && userInput % 2 == 0)
                     {
-                        Console.WriteLine($"{name} your number {userInput} is even and less than 25");
+                        Console.WriteLine($"Even and less than 25");
                     }
 
                     else if (userInput % 2 != 0)
                     {
-                        Console.WriteLine($"{name} your number {userInput} is odd");
+                        Console.WriteLine($" {userInput}  Odd");
                     }
                 }
                 else
                 {
                     if (rageMeter == 0)
                     {
-                        Console.WriteLine($"{name}that number was not between 1 - 100");
+                        Console.WriteLine($"{name} that number was not between 1 - 100");
                         rageMeter++;
                     }
                     else if (rageMeter == 1)
@@ -112,9 +107,10 @@ namespace DecisionMaker
 
 
                      }
-                     Console.WriteLine($"Would you like to play again {name}? [Y | N]");
+                    
                 }
-            }
+                 Console.WriteLine($"Would you like to play again {name}? [Y | N]");
+            }  
                 while (Console.ReadLine().ToUpper() != "N") ;
              Console.WriteLine($"thank you for playing {name}");
         }
