@@ -72,25 +72,25 @@ namespace DecisionMaker
                         }
                     case 4:
                     {
-                        Console.WriteLine($"Your killing me smalls ill try to slow it down BE-TWEEN 1 and wait for it...100");
+                        Console.WriteLine($"Your killing me smalls I'll try to slow it down BE-TWEEN 1 and wait for it...100");
                         rageMeter++;
                             break;
                         }
                     case 5:
                     {
-                        Console.WriteLine($"What the hell {name} now youre just here to see how much i was trying to type fine I'll play your sick game pick a number NOT between 1-100 ");
+                        Console.WriteLine($"What the hell {name} now you're just here to see how much i was trying to type fine I'll play your sick game pick a number NOT between 1-100 ");
                         rageMeter++;
                             break;
                         }
                     case 6:
                     {
-                        Console.WriteLine($"Yeah {name} i have no life too keep trying or just do it right god damn it... ");
+                        Console.WriteLine($"Yeah {name} I have no life either keep trying or just do it right please... ");
                         rageMeter++;
                             break;
                         }
                     case 7:
                     {
-                        Console.WriteLine($"{name} youre gonna get on my last nerve i swear... just please for the love of god put in a number between 1 and 100");
+                        Console.WriteLine($"{name} you're gonna get on my last nerve I swear... just please for the love of god put in a number between 1 and 100");
                         rageMeter++;
                             break;
                         }
